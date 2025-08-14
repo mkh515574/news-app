@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/features/home/view/home_screen.dart';
+import 'package:news_app/core/utils/app_routes.dart';
+import 'package:news_app/core/utils/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      home:HomeScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.light,
+      routes: AppRoutes.routes,
+      initialRoute: AppRoutes.homeRouteName,
     );
   }
 }
