@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/features/home/view/widgets/home_screen_body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,6 +12,7 @@ class HomeScreen extends StatelessWidget {
         actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
 
       ),
+      body: HomeScreenBody(),
     );
   }
 }

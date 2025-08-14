@@ -15,7 +15,12 @@ class AppTheme {
       centerTitle: true,
       elevation: 0,
     ),
-    textTheme: TextTheme(titleMedium: AppTextStyle.medium20Black),
+    textTheme: TextTheme(
+      titleMedium: AppTextStyle.medium20Black,
+      titleLarge: AppTextStyle.medium24Black,
+      headlineMedium: AppTextStyle.bold28White,
+      bodyMedium: AppTextStyle.medium24White,
+    ),
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -28,6 +33,12 @@ class AppTheme {
       elevation: 0,
       iconTheme: IconThemeData(color: AppColors.whiteColor, size: 30),
     ),
-    textTheme: TextTheme(titleMedium: AppTextStyle.medium20White),
+    textTheme: TextTheme(
+      titleMedium: AppTextStyle.medium20White,
+      titleLarge: AppTextStyle.medium24White,
+      bodyMedium: AppTextStyle.medium24Black,
+      headlineMedium: AppTextStyle.bold28Black
+
+    ),
   );
 }
