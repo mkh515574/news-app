@@ -5,6 +5,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home", style: Theme.of(context).textTheme.titleMedium),
+        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
+
+      ),
+    );
   }
 }
