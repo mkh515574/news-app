@@ -1,4 +1,5 @@
 import '../../../core/utils/app_assets.dart';
+import '../../../l10n/app_localizations.dart';
 
 class CategoryModel {
   String id;
@@ -11,32 +12,35 @@ class CategoryModel {
     required this.imagePath,
   });
 
-  static List<CategoryModel> getCategories(bool isDark) {
+
+
+  static List<CategoryModel> getCategories(bool isDark,context) {
+    var lang = AppLocalizations.of(context)!;
     return [
       CategoryModel(
         id: "general",
-        title: "General",
+        title: lang.general,
         imagePath: isDark
             ? AppAssets.generalDarkImage
             : AppAssets.generalLightImage,
       ),
       CategoryModel(
         id: "business",
-        title: "Business",
+        title: lang.business,
         imagePath: isDark
             ? AppAssets.businessDarkImage
             : AppAssets.businessLightImage,
       ),
       CategoryModel(
         id: "sports",
-        title: "Sports",
+        title: lang.sports,
         imagePath: isDark
             ? AppAssets.sportsDarkImage
             : AppAssets.sportsLightImage,
       ),
       CategoryModel(
         id: "technology",
-        title: "Technology",
+        title: lang.technology,
         imagePath: isDark
             ? AppAssets.technologyDarkImage
             : AppAssets.technologyLightImage,
@@ -44,7 +48,7 @@ class CategoryModel {
 
       CategoryModel(
         id: "science",
-        title: "Science",
+        title: lang.science,
         imagePath: isDark
             ? AppAssets.scienceDarkImage
             : AppAssets.scienceLightImage,
@@ -52,14 +56,14 @@ class CategoryModel {
 
       CategoryModel(
         id: "health",
-        title: "Health",
+        title: lang.health,
         imagePath: isDark
             ? AppAssets.healthDarkImage
             : AppAssets.healthLightImage,
       ),
       CategoryModel(
         id: "entertainment",
-        title: "Entertainment",
+        title: lang.entertainment,
         imagePath: isDark
             ? AppAssets.entertainmentDarkImage
             : AppAssets.entertainmentLightImage,

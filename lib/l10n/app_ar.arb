@@ -1,0 +1,25 @@
+{
+
+
+  "language" : "اللغه",
+  "theme" : "النمط",
+  "english" : "الانجليزية",
+  "arabic" : "العربية",
+  "light" : "نهارى",
+  "dark" : "ليلي",
+  "go_to_home" : "الصفحة الرئيسيه",
+  "home" : "الصفحة الرئيسيه ",
+  "good_morning" : "صباح الخير\nإليك بعض الأخبار",
+  "general": "عام",
+  "business": "الاعمال",
+  "sports": "الرياضه",
+  "technology": "التكنولوجيا",
+  "science": "العلوم",
+  "health": "الصحه",
+  "entertainment": "ترفيه",
+  "view_all": "عرض الكل"
+
+
+
+
+}

@@ -1,0 +1,23 @@
+{
+
+  "language" : "Language",
+  "theme" : "Theme",
+  "english" : "English",
+  "arabic" : "Arabic",
+  "light" : "Light",
+  "dark" : "Dark",
+  "go_to_home" : "Go To Home",
+  "home": "Home",
+  "good_morning": "Good Morning\nHere is Some News For You",
+  "general": "General",
+  "business": "Business",
+  "sports": "Sports",
+  "technology": "Technology",
+  "science": "Science",
+  "health": "Health",
+  "entertainment": "Entertainment",
+  "view_all": "View All"
+
+
+
+}
