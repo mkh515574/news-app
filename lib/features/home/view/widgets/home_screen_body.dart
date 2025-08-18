@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/features/home/view/widgets/list_view_builder.dart';
 
+import '../../../../l10n/app_localizations.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key});
@@ -15,7 +16,7 @@ class HomeScreenBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Good Morning\nHere is Some News For You",
+              AppLocalizations.of(context)!.good_morning,
               style: Theme.of(context).textTheme.titleLarge,
             ),
             SizedBox(height: size.height * 0.02),
