@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/core/services/language_provider.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../model/category_model.dart';
 
 class ListViewItem extends StatelessWidget {
@@ -14,6 +16,7 @@ class ListViewItem extends StatelessWidget {
     var size = MediaQuery.of(context).size;
     bool isEven = (index % 2 == 0);
     return Stack(
+      textDirection: isEven ? TextDirection.ltr : TextDirection.rtl,
       alignment: isEven ? Alignment.bottomRight : Alignment.bottomLeft,
       children: [
         ClipRRect(
@@ -47,12 +50,15 @@ class ListViewItem extends StatelessWidget {
                   color: AppColors.grayColor.withOpacity(0.5),
                 ),
                 child: Row(
+                  textDirection: LanguageProvider().getLanguage() == 'ar'
+                      ? TextDirection.rtl
+                      : TextDirection.ltr,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "View All",
+                      AppLocalizations.of(context)!.view_all,
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     SizedBox(width: size.width * 0.02),

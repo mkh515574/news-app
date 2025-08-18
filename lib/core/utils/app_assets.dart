@@ -18,4 +18,7 @@ class AppAssets {
       "assets/images/entertainment_light.png";
   static const String businessLightImage = "assets/images/busniess_light.png";
   static const String generalLightImage = "assets/images/general_light.png";
+  // icons
+  static const String themeIcon = "assets/images/theme_icon.png";
+  static const String languageIcon = "assets/images/lang_icon.png";
 }
