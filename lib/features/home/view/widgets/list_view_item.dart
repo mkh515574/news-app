@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/core/services/language_provider.dart';
+import 'package:news_app/core/services/provider/language_provider.dart';
 
 import '../../../../core/utils/app_colors.dart';
 import '../../../../l10n/app_localizations.dart';

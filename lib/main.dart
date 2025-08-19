@@ -4,14 +4,14 @@ import 'package:news_app/core/utils/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'core/services/language_provider.dart';
+import 'core/services/provider/language_provider.dart';
 import 'core/services/shared_prefs.dart';
-import 'core/services/theme_provider.dart';
+import 'core/services/provider/theme_provider.dart';
 import 'l10n/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
- await SharedPreferences.getInstance();
+  await SharedPreferences.getInstance();
 
   final themeMode = await getThemeMode();
   final lang = await getLanguage();
@@ -33,7 +33,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
