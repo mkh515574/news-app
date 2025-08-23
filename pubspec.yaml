@@ -41,6 +41,10 @@ dependencies:
   http: ^1.5.0
   cached_network_image: ^3.4.1
   timeago: ^3.7.1
+  webview_flutter: ^4.4.2
+  url_launcher: ^6.3.2
+  infinite_scroll_pagination: ^5.1.0
+
 
 
 dev_dependencies:

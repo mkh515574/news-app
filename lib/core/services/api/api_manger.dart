@@ -20,17 +20,19 @@ class ApiManager {
       var json = jsonDecode(response.body);
       return SourceResponse.fromJson(json);
     } catch (e) {
-      throw e;
+      rethrow;
     }
   }
 
-  static Future<NewsResponse?> getNewsBySourceId(String sourceId) async {
+  static Future<NewsResponse?> getNewsBySourceId(String sourceId,String pageNumbers) async {
 
     Uri url=Uri.https(AppConstants.baseUrl,
         EndPoints.newsApi,
         {
           "apiKey" :AppConstants.apiKey,
-          "sources":sourceId
+          "sources":sourceId,
+          'page': pageNumbers,
+          'pageSize': '5',
         });
     try{
       var response=await  http.get(url);
@@ -41,5 +43,22 @@ class ApiManager {
       rethrow ;
     }
 
+  }
+
+
+  static Future<NewsResponse> getNewsBySearch(String searchByUser) async {
+    //https://newsapi.org/v2/everything?q=searchIn&apiKey=b5e58c9b906345cbbbd44b1a997d1e6c
+    Uri url = Uri.https(AppConstants.baseUrl, EndPoints.newsApi, {
+      'apiKey': AppConstants.apiKey,
+      'q': searchByUser,
+      'searchIn': 'title',
+    });
+    try {
+      var response = await http.get(url);
+
+      return NewsResponse.fromJson(jsonDecode(response.body));
+    } catch (e) {
+      rethrow;
+    }
   }
 }

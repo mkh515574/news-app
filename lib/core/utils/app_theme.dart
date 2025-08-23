@@ -19,7 +19,8 @@ class AppTheme {
       titleMedium: AppTextStyle.medium20Black,
       titleLarge: AppTextStyle.medium24Black,
       headlineMedium: AppTextStyle.bold28White,
-      bodyMedium: AppTextStyle.medium24White,
+      headlineSmall: AppTextStyle.medium24White,
+      bodyMedium: AppTextStyle.medium20White,
       labelMedium: AppTextStyle.bold16Black,
       labelSmall: AppTextStyle.bold14Black,
       labelLarge: AppTextStyle.medium12Gray,
@@ -42,7 +43,9 @@ class AppTheme {
       titleLarge: AppTextStyle.medium24White,
       bodyMedium: AppTextStyle.medium24Black,
       headlineMedium: AppTextStyle.bold28Black,
+      headlineSmall: AppTextStyle.medium20Black,
       labelMedium: AppTextStyle.bold16White,
+
       labelSmall: AppTextStyle.bold14White,
       labelLarge: AppTextStyle.medium12Gray,
 

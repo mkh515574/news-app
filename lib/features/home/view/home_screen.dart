@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/core/utils/app_routes.dart';
 import 'package:news_app/features/home/model/category_model.dart';
 import 'package:news_app/features/home/view/widgets/home_screen_body.dart';
 import 'package:news_app/features/news/view/category_details.dart';
@@ -24,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
               : selectedCategory!.title,
           style: Theme.of(context).textTheme.titleMedium,
         ),
-        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
+        actions: [IconButton(onPressed: () {
+          Navigator.pushNamed(context, AppRoutes.searchRouteName);
+        }, icon: const Icon(Icons.search))],
       ),
       drawer: DrawerView(),
       body: selectedCategory == null
