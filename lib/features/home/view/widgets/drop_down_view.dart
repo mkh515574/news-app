@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../../../core/services/language_provider.dart';
-import '../../../../core/services/theme_provider.dart';
+import '../../../../core/services/provider/language_provider.dart';
+import '../../../../core/services/provider/theme_provider.dart';
 
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';

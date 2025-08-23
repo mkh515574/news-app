@@ -13,6 +13,31 @@ class AppTextStyle {
     fontWeight: FontWeight.w500,
     color: AppColors.whiteColor,
   );
+  static final TextStyle medium12Gray = GoogleFonts.inter(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.grayColor,
+  );
+  static final TextStyle bold16White = GoogleFonts.inter(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.whiteColor,
+  );
+  static final TextStyle bold16Black = GoogleFonts.inter(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
+  static final TextStyle bold14Black = GoogleFonts.inter(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
+  static final TextStyle bold14White = GoogleFonts.inter(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: AppColors.whiteColor,
+  );
   static final TextStyle medium20White = GoogleFonts.inter(
     fontSize: 20,
     fontWeight: FontWeight.w500,
