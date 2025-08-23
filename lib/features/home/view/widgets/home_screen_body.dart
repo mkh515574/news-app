@@ -4,7 +4,8 @@ import 'package:news_app/features/home/view/widgets/list_view_builder.dart';
 import '../../../../l10n/app_localizations.dart';
 
 class HomeScreenBody extends StatelessWidget {
-  const HomeScreenBody({super.key});
+  final OnCategoryTap? onCategoryTap;
+  const HomeScreenBody({super.key, required this.onCategoryTap});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class HomeScreenBody extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
             ),
             SizedBox(height: size.height * 0.02),
-            ListViewBuilder(),
+            ListViewBuilder(onCategoryTap: onCategoryTap,),
           ],
         ),
       ),
